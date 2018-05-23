@@ -1,3 +1,11 @@
-1: Para inicializar una clase Persona uno necesita una instancia de la clase Adress pero la clase Adress necesesita una instancia de la clase Persona
-2: Para inicializar una clase Persona se tienen que inicializar dos otras personas lo que lleva a un loop infinito o hasta ingresar las personas como null
-3: En la clase Persona No se puede ver el adress que le viene como atributo, probablemente porque es privado pero tampoco existe un metodo para mostrarlo, esto mas que un error es algo inconviniente ya que se puede solucionar a traves de una lista de adress
+1: Para inicializar una clase Persona uno necesita una instancia de la clase Adress pero la clase 
+   Adress necesesita una instancia de la misma instancia de clase persona que la instancia a ella,
+   lo que no se puede programar, por lo que en mi codigo hice una clase adrress que tomaba ese
+   atributo como null para inicializar la clase persona.
+
+2: Para inicializar una clase Persona se tienen que inicializar dos otras personas lo que lleva a 
+   un loop infinito o hasta ingresar las personas como null. mas que un error, es inconviniente.
+
+3: En la clase Persona No se puede ver el adress que le viene como atributo, probablemente porque 
+   es privado pero tampoco existe un metodo para mostrarlo, denuevo esto mas que un error, es algo 
+   inconviniente ya que se puede solucionar a traves de una lista de adress.

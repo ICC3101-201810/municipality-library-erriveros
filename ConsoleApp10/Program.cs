@@ -194,23 +194,65 @@ namespace ConsoleApp10
                     }
                     if (opcion == 4)
                     {
-                        Console.WriteLine("ingrese los datos de la persona que lo adopta");
-                        Console.WriteLine("Ingrese su nombre:");
-                        string nombre2 = Console.ReadLine();
-                        Console.WriteLine("Ingrese su appelido:");
-                        string apellido2 = Console.ReadLine();
-                        Console.WriteLine("ingrese su feecha de nacimiento:");
-                        DateTime fechaNacimiento2 = DateTime.ParseExact(Console.ReadLine(), "yyyy-MM-dd",
-                                           System.Globalization.CultureInfo.InvariantCulture);
-                        Address a2 = null;
-                        Console.WriteLine("ingrese su rut:");
-                        string rut2 = (Console.ReadLine());
-                        Console.WriteLine("ingrgese donde estudio");
-                        string AlmaMater2 = Console.ReadLine();
-                        Person p12 = null;
-                        Person p22 = null;
-                        Person personIngresada2 = new Person(nombre, apellido, fechaNacimiento, a, rut, p1, p2);
-                        personIngresada.getAdopted(personIngresada2);
+                        Console.WriteLine("ingrese 1 si lo adopta una persona o 2 si lo adoptan dos personas");
+                        int cantAdop=Convert.ToInt32(Console.ReadLine());
+                        if(cantAdop==1){
+                            Console.WriteLine("ingrese los datos de la persona que lo adopta");
+                            Console.WriteLine("Ingrese su nombre:");
+                            string nombre2 = Console.ReadLine();
+                            Console.WriteLine("Ingrese su appelido:");
+                            string apellido2 = Console.ReadLine();
+                            Console.WriteLine("ingrese su feecha de nacimiento:");
+                            DateTime fechaNacimiento2 = DateTime.ParseExact(Console.ReadLine(), "yyyy-MM-dd",
+                                               System.Globalization.CultureInfo.InvariantCulture);
+                            Address a2 = null;
+                            Console.WriteLine("ingrese su rut:");
+                            string rut2 = (Console.ReadLine());
+                            Console.WriteLine("ingrgese donde estudio");
+                            string AlmaMater2 = Console.ReadLine();
+                            Person p12 = null;
+                            Person p22 = null;
+                            Person personIngresada2 = new Person(nombre, apellido, fechaNacimiento, a, rut, p1, p2);
+                            personIngresada.getAdopted(personIngresada2);
+                            }
+                        else
+                        {
+                            Console.WriteLine("ingrese los datos de la primera persona que lo adopta");
+                            Console.WriteLine("Ingrese su nombre:");
+                            string nombre2 = Console.ReadLine();
+                            Console.WriteLine("Ingrese su appelido:");
+                            string apellido2 = Console.ReadLine();
+                            Console.WriteLine("ingrese su feecha de nacimiento:");
+                            DateTime fechaNacimiento2 = DateTime.ParseExact(Console.ReadLine(), "yyyy-MM-dd",
+                                               System.Globalization.CultureInfo.InvariantCulture);
+                            Address a2 = null;
+                            Console.WriteLine("ingrese su rut:");
+                            string rut2 = (Console.ReadLine());
+                            Console.WriteLine("ingrgese donde estudio");
+                            string AlmaMater2 = Console.ReadLine();
+                            Person p12 = null;
+                            Person p22 = null;
+                            Person personIngresada2 = new Person(nombre, apellido, fechaNacimiento, a, rut, p1, p2);
+                          
+
+                            Console.WriteLine("ingrese los datos de la segunda persona que lo adopta");
+                            Console.WriteLine("Ingrese su nombre:");
+                            string nombre2 = Console.ReadLine();
+                            Console.WriteLine("Ingrese su appelido:");
+                            string apellido2 = Console.ReadLine();
+                            Console.WriteLine("ingrese su feecha de nacimiento:");
+                            DateTime fechaNacimiento2 = DateTime.ParseExact(Console.ReadLine(), "yyyy-MM-dd",
+                                               System.Globalization.CultureInfo.InvariantCulture);
+                            Address a2 = null;
+                            Console.WriteLine("ingrese su rut:");
+                            string rut2 = (Console.ReadLine());
+                            Console.WriteLine("ingrgese donde estudio");
+                            string AlmaMater2 = Console.ReadLine();
+                            Person p12 = null;
+                            Person p22 = null;
+                            Person personIngresada3 = new Person(nombre, apellido, fechaNacimiento, a, rut, p1, p2);
+                            personIngresada.getAdopted(personIngresada2,personIngresada3);
+                        }
                     }
                     if (opcion == 5)
                     {
