@@ -1,3 +1,3 @@
-1: Para inicializar una clase Persona se tienen que inicializar dos otras personas lo que lleva a un loop infinito o hasta ingresar las personas como null
-2: Para inicializar una clase Persona uno necesita una instancia de la clase Adress pero la clase necesesita una instancia de la clase Persona
+1: Para inicializar una clase Persona uno necesita una instancia de la clase Adress pero la clase Adress necesesita una instancia de la clase Persona
+2: Para inicializar una clase Persona se tienen que inicializar dos otras personas lo que lleva a un loop infinito o hasta ingresar las personas como null
 3: En la clase Persona No se puede ver el adress que le viene como atributo, probablemente porque es privado pero tampoco existe un metodo para mostrarlo, esto mas que un error es algo inconviniente ya que se puede solucionar a traves de una lista de adress
